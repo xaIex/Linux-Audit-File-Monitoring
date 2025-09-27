@@ -66,6 +66,9 @@ sudo ausearch -ts today -k proj2
 
 <img width="1029" height="270" alt="image" src="https://github.com/user-attachments/assets/ac5655d2-7a9a-4cdb-b21c-eae60b0e79f0" />
 
+<img width="1042" height="435" alt="image" src="https://github.com/user-attachments/assets/11b6b56a-813f-40c4-91bc-7819511a5ef1" />
+
+
 - Here is the information we want. Here we see `attack-a` executed and `cloudia.txt` was one of the path entries in that event. So attack-a -> cloudia.txt.
 - Looking at the logs further we find that:
   - attack-b -> oakley.txt
