@@ -34,7 +34,7 @@ sudo systemctl status auditd
 Add write-watch rules for the protected files in /etc/audit/rules.d/audit.rules
 Also set out key to proj2.
 Save and quit afterwards (:wq)
-```bash
+```
 sudo vi /etc/audit/rules.d/audit.rules
 ```
 <img width="790" height="467" alt="image" src="https://github.com/user-attachments/assets/02734883-575f-426a-8bde-ee7ac99dd4f9" />
@@ -55,6 +55,13 @@ sudo auditctl -l
 ```
 
 <img width="791" height="187" alt="image" src="https://github.com/user-attachments/assets/4d1f2868-5a00-4ac4-8911-3b582a31c4cf" />
+
+## Viewing Audit Logs
+```
+sudo ausearch -ts today -k proj2
+```
+<img width="909" height="219" alt="image" src="https://github.com/user-attachments/assets/2f76f629-356b-4edd-87e7-5fae05772113" />
+- Those repeated blocks with comm="auditctl" and CONFIG_CHANGE op=add_rule key="proj2" are just the audit system logging that you added the rules (the -w lines). They aren’t the attacks — they’re the config change events when the rules were installed.
 
 
 
