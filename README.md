@@ -32,9 +32,9 @@ sudo systemctl status auditd
 
 ### 4. Enter Rules 
 Add write-watch rules for the protected files in /etc/audit/rules.d/audit.rules
-Also set out key to proj2
-Save and quit (:wq)
-```
+Also set out key to proj2.
+Save and quit afterwards (:wq)
+```bash
 sudo vi /etc/audit/rules.d/audit.rules
 ```
 <img width="790" height="467" alt="image" src="https://github.com/user-attachments/assets/02734883-575f-426a-8bde-ee7ac99dd4f9" />
