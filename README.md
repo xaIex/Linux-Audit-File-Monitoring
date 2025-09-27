@@ -82,4 +82,14 @@ sudo ausearch -ts today -k proj2
 ##### Everything else is identical:
 - The story about Cloudia, her adventures, and her return to the sky is unchanged. Only the additional Harry Potter paragraph was appended to the file.
 
+## Reflection
 
+- How Audit works: Audit monitors specified files for write operations and logs details such as timestamp, process, user, and syscall.
+
+- What we learned: This project demonstrates how audit rules can track changes to files and identify malicious or unexpected modifications.
+
+## Notes / Tips
+
+- Make sure to extract the starter repo into a clean directory if you need to preserve original files.
+
+- Use separate keys or the same key (proj2) for all rules depending on how you want to filter logs.
