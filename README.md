@@ -38,7 +38,7 @@ sudo systemctl status auditd
 sudo vi /etc/audit/rules.d/audit.rules
 ```
 <img width="790" height="467" alt="image" src="https://github.com/user-attachments/assets/02734883-575f-426a-8bde-ee7ac99dd4f9" />
-
+- Note: loggy and precipitation.csv were misspelled! Fix before attacking and filtering. 
 ### 4. Restart Audit and Ensure rules have been saved
 
 ```bash
@@ -72,7 +72,8 @@ sudo ausearch -ts today -k proj2
 - Here is the information we want. Here we see `attack-a` executed and `cloudia.txt` was one of the path entries in that event. So attack-a -> cloudia.txt.
 - Looking at the logs further we find that:
   - attack-b -> oakley.txt
-  - attack b- > squeaky.txt
+  - attack b -> squeaky.txt
+  - attack c -> precipitation.csv
 
 #### Looking at the “before” and “after” versions of cloudia.txt, here’s what changed:
 
